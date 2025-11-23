@@ -1,13 +1,13 @@
 package com.example.tp.ex2;
 
-public class Étudiant {
+public class Etudiant {
 	 private static int compteur = 0;
 	    private final int id;
 	    private String nom;
 	    private String prenom;
 	    private Filiere filiere;
 
-	    public Étudiant(String nom, String prenom) {
+	    public Etudiant(String nom, String prenom) {
 	        this.id = ++compteur;
 	        this.nom = nom;
 	        this.prenom = prenom;

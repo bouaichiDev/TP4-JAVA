@@ -8,12 +8,12 @@ public class Main {
 	        Filiere genie  = new Filiere("Génie Civil");
 
 	        // 2. Création des étudiants (noms marocains)
-	        Étudiant e1 = new Étudiant("El Idrissi", "Mohamed");
-	        Étudiant e2 = new Étudiant("Bentaleb", "Fatima");
-	        Étudiant e3 = new Étudiant("Chouaib",   "Youssef");
-	        Étudiant e4 = new Étudiant("Lahlou",    "Salma");
-	        Étudiant e5 = new Étudiant("Roussafi",  "Hassan");
-	        Étudiant e6 = new Étudiant("Amrani",    "Aïcha");
+	        Etudiant e1 = new Etudiant("El Idrissi", "Mohamed");
+	        Etudiant e2 = new Etudiant("Bentaleb", "Fatima");
+	        Etudiant e3 = new Etudiant("Chouaib",   "Youssef");
+	        Etudiant e4 = new Etudiant("Lahlou",    "Salma");
+	        Etudiant e5 = new Etudiant("Roussafi",  "Hassan");
+	        Etudiant e6 = new Etudiant("Amrani",    "Aïcha");
 
 	        // 3. Association étudiants ↔ filières
 	        info.ajouterEtudiant(e1);
@@ -24,8 +24,8 @@ public class Main {
 	        // force l’agrandissement du tableau
 	        info.ajouterEtudiant(e6);
 
-	        genie.ajouterEtudiant(new Étudiant("Belkahia", "Khadija"));
-	        genie.ajouterEtudiant(new Étudiant("Laaroussi","Walid"));
+	        genie.ajouterEtudiant(new Etudiant("Belkahia", "Khadija"));
+	        genie.ajouterEtudiant(new Etudiant("Laaroussi","Walid"));
 
 	        // 4. Affichage
 	        System.out.println(info);

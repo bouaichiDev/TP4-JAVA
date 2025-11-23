@@ -4,13 +4,13 @@ public class Filiere {
 	 private static int compteur = 0;
 	    private final int id;
 	    private String nom;
-	    private Étudiant[] etudiants;
+	    private Etudiant[] etudiants;
 	    private int nbEtudiants;
 
 	    public Filiere(String nom) {
 	        this.id = ++compteur;
 	        this.nom = nom;
-	        this.etudiants = new Étudiant[5];
+	        this.etudiants = new Etudiant[5];
 	        this.nbEtudiants = 0;
 	    }
 
@@ -18,9 +18,9 @@ public class Filiere {
 	    public String getNom() { return nom; }
 	    public int getNbEtudiants() { return nbEtudiants; }
 
-	    public void ajouterEtudiant(Étudiant e) {
+	    public void ajouterEtudiant(Etudiant e) {
 	        if (nbEtudiants == etudiants.length) {
-	            Étudiant[] tmp = new Étudiant[etudiants.length * 2];
+	            Etudiant[] tmp = new Etudiant[etudiants.length * 2];
 	            System.arraycopy(etudiants, 0, tmp, 0, etudiants.length);
 	            etudiants = tmp;
 	        }

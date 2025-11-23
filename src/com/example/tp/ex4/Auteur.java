@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Auteur {
 	 private static int compteur = 0;      // compteur global
-	    private final int id;                 // identifiant unique
+	    private final int id;              // identifiant unique
 	    private String nom;
 	    private List<Livre> livres = new ArrayList();
 
