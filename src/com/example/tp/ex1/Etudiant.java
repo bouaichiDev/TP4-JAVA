@@ -16,6 +16,11 @@ public class Etudiant {
 		this.nbNotes = 0;
 	}
 
+	public void SupprimerDernierNote() {
+		int indexLastNote = notes.length - 1;
+		notes[indexLastNote] = 0;
+	}
+
 	public void ajouterNote(double note) {
 		if (nbNotes == notes.length) {
 			double[] tmp = new double[notes.length * 2];
@@ -24,28 +29,30 @@ public class Etudiant {
 		}
 		notes[nbNotes++] = note;
 	}
+
 	public double calculerMoyenne() {
-	    if (nbNotes == 0) return 0.0;
-	    double somme = 0;
-	    for (int i = 0; i < nbNotes; i++) {
-	        somme += notes[i];
-	    }
-	    return somme / nbNotes;
+		if (nbNotes == 0)
+			return 0.0;
+		double somme = 0;
+		for (int i = 0; i < nbNotes; i++) {
+			somme += notes[i];
+		}
+		return somme / nbNotes;
 	}
+
 	public void afficherNotes() {
-	    System.out.print("Notes de " + nom + " " + prenom + " : ");
-	    for (int i = 0; i < nbNotes; i++) {
-	        System.out.print(notes[i]);
-	        if (i < nbNotes - 1) System.out.print(", ");
-	    }
-	    System.out.println();
+		System.out.print("Notes de " + nom + " " + prenom + " : ");
+		for (int i = 0; i < nbNotes; i++) {
+			System.out.print(notes[i]);
+			if (i < nbNotes - 1)
+				System.out.print(", ");
+		}
+		System.out.println();
 	}
+
 	@Override
 	public String toString() {
-	    return "Etudiant[id=" + id +
-	           ", nom=" + nom +
-	           ", prenom=" + prenom +
-	           ", moyenne=" + String.format("%.2f", calculerMoyenne()) +
-	           "]";
+		return "Etudiant[id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", moyenne="
+				+ String.format("%.2f", calculerMoyenne()) + "]";
 	}
 }

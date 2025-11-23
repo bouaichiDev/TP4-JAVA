@@ -20,6 +20,7 @@ public class Main {
 		System.out.println(e1);
 
 		e2.afficherNotes();
+		e2.SupprimerDernierNote();
 		System.out.println(e2);
 	}
 
